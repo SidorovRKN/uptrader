@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tree_menu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/templates/menu/menu_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/templatetags/menu_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/menu/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/tree_menu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/tree_menu/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/tree_menu/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/tree_menu/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree_menu/tree_menu/wsgi.py" afterDir="false" />
+    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/templates/menu/menu_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/templates/menu/menu_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/templatetags/menu_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/templatetags/menu_tags.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +86,30 @@
       <option name="presentableId" value="Default" />
       <updated>1712952025133</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1713096005674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096005674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
