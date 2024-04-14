@@ -21,38 +21,38 @@ def render_menu_items(items, path_parts):
 
 @register.simple_tag(takes_context=True)
 def draw_menu(context, menu_name):
-    items = MenuItem.objects.filter(menu_name=menu_name).select_related('parent')
-    """
-    Раз уж нам надо ограничиться одним запросом к бд на одно меню, то мы не сможем работать с дочерними
-    элементами через obj.children.all(), так как это новый запрос к бд, поэтому будем выгружать все
-    записи, и формировать свое дерево уже в голом питоне
-    """
-
-    objects = {item.name: Menu(item.name, item.url, item.menu_name) for item in items if item.parent is None}
-    for item in items:
-        if item.parent is not None:
-            if item.parent.name in objects:
-                parent = objects[item.parent.name]
-                obj = Menu(item.name, item.url, item.menu_name, parent=parent)
-                parent.childrens.append(obj)
-                objects.update({item.name: obj})
-
-    queryset = [obj for obj in objects.values() if obj.parent is None]
-
     request = context['request']
     path_parts = request.path.strip('/').split('/')
-    return mark_safe(render_menu_items(queryset, path_parts))
+
+    items = MenuItem.objects.filter(menu_name=menu_name)
+
+    """
+       Раз уж нам надо ограничиться одним запросом к бд на одно меню, то мы не сможем работать с дочерними
+       элементами через obj.children.all(), так как это новый запрос к бд, поэтому будем выгружать все
+       записи, и формировать свое дерево уже в голом питоне
+   """
+
+    menu_items = {item.id: Menu(item.id, item.name, item.url, item.menu_name, item.parent_id) for item in items}
+    for item in items:
+        if item.parent_id:
+            parent = menu_items.get(item.parent_id)
+            if parent:
+                parent.childrens.append(menu_items[item.id])
+
+    root_items = [item for item in menu_items.values() if item.parent_id is None]
+    return mark_safe(render_menu_items(root_items, path_parts))
 
 
 # Класс-копия нашей модели. Если вдруг мы сможем вернутья к возможности работы через бд,
 # рефакторинг кода не займет много времени
 
 class Menu:
-    def __init__(self, name, url, menu_name, parent=None):
+    def __init__(self, id, name, url, menu_name, parent_id=None):
+        self.id = id
         self.name = name
         self.url = url
         self.menu_name = menu_name
-        self.parent = parent
+        self.parent_id = parent_id
         self.childrens = []
 
     def get_absolute_url(self):
