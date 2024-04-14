@@ -6,6 +6,7 @@ from .models import MenuItem
 
 
 class MenuItemAdmin(admin.ModelAdmin):
+    exclude = ('url',)  # url сформируется сам, лучше в этот процесс не влезать
     list_display = ('name', 'parent', 'menu_name', 'level', 'get_absolute_url')
     list_filter = ('menu_name', 'parent', 'level')
     search_fields = ('name',)

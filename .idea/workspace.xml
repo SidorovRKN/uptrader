@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="now only one query for one menu">
+    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="now only one query for one menu(faster)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree_menu/menu/templatetags/menu_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/templatetags/menu_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_menu/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SidorovRKN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1a4efaab-f470-4c5a-8812-b9b6ebbfa854" />
+        <option name="url" value="https://github.com/SidorovRKN/uptrader" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -100,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713131257617</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="now only one query for one menu(faster)">
+      <option name="closed" value="true" />
+      <created>1713132462046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713132462046</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="now only one query for one menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="now only one query for one menu" />
+    <MESSAGE value="now only one query for one menu(faster)" />
+    <option name="LAST_COMMIT_MESSAGE" value="now only one query for one menu(faster)" />
   </component>
 </project>
