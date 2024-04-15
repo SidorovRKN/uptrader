@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="now only one query for one menu(faster)">
+    <list default="true" id="c522ef2b-1105-49c4-ab2e-04612b59c43f" name="Changes" comment="configure admin.py and model urls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree_menu/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree_menu/menu/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree_menu/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree_menu/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_menu/menu/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713132462046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="configure admin.py and model urls">
+      <option name="closed" value="true" />
+      <created>1713135178904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713135178904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +147,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="now only one query for one menu" />
     <MESSAGE value="now only one query for one menu(faster)" />
-    <option name="LAST_COMMIT_MESSAGE" value="now only one query for one menu(faster)" />
+    <MESSAGE value="configure admin.py and model urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure admin.py and model urls" />
   </component>
 </project>

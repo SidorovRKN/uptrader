@@ -43,8 +43,7 @@ def draw_menu(context, menu_name):
     return mark_safe(render_menu_items(root_items, path_parts))
 
 
-# Класс-копия нашей модели. Если вдруг мы сможем вернутья к возможности работы через бд,
-# рефакторинг кода не займет много времени
+# Клон модели
 
 class Menu:
     def __init__(self, id, name, url, menu_name, parent_id=None):
